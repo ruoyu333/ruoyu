@@ -1,0 +1,112 @@
+.form {
+    background: #F5F5F5;
+    padding-bottom: 100px;
+
+    .form_title {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        p {
+            font-size: 40px;
+            margin-top: 80px;
+            margin-bottom: 40px;
+            letter-spacing: 2px;
+            color: #3D3D3D;
+        }
+
+        hr {
+            border-bottom: 3px solid #13212F;
+            width: 20%;
+            height: 1px;
+            margin-left: 20px;
+            margin-top: 0px;
+            border-top: none;
+            opacity: 1;
+            margin-top: 60px;
+
+        }
+    }
+
+    .container {
+        width: 800px;
+
+        .row {
+            .col {
+                .form-control {
+                    height: 60px;
+                    border-radius: 16px;
+                }
+            }
+        }
+
+        .email {
+            .mb-3 {
+                .form-control {
+                    height: 60px;
+                    border-radius: 16px;
+                }
+            }
+        }
+    }
+
+
+    .email {
+        .mb-3 {
+            .form-control {
+                height: 60px;
+                border-radius: 16px;
+            }
+        }
+    }
+}
+
+// .message {
+//     position: relative;
+
+//     ::placeholder {
+//         position: absolute;
+//         top: 20px;
+//     }
+
+//     .mb-3 {
+//         .form-control {
+//             height: 220px;
+//             border-radius: 16px;
+//         }
+//     }
+
+//     #exampleFormControlInput1 {
+//         margin-top: 10px;
+//     }
+// }
+
+button {
+    border: none;
+    margin-top: 10px;
+    background-color: #13212F;
+    width: 100%;
+
+    &:hover {
+        background-color: #b8b8b8;
+        ;
+    }
+}
+
+footer {
+    .bg_footer {
+        background-color: #13212F;
+        height: 40px;
+        display: flex;
+        align-items: center;
+
+        p {
+            font-size: 14px;
+            color: white;
+            font-weight: 100;
+            margin-top: 15px;
+            margin-left: 30px;
+        }
+    }
+}

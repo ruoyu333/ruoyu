@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ruoyu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <style>
+        .works_header {
+            background-color: white;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            margin: 24px 24px;
+
+            .ruoyu {
+                width: 121px;
+                height: 22px;
+            }
+
+            .social_media {
+                margin-left: 40px;
+            }
+
+            .hamburger {
+                width: 32px;
+                height: 32px;
+                margin-left: auto;
+            }
+        }
+
+        .pettime {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin-bottom: 60px;
+        }
+
+        .pettime img {
+            width: 80%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="works_header">
+        <nav>
+            <img class="ruoyu" src="img/ruoyu.svg" alt="">
+            <div class="social_media">
+                <a href=""> <img src="img/FB.svg" alt=""></a>
+                <a href=""> <img src="img/indeed.svg" alt=""></a>
+                <a href=""> <img src="img/ig.svg" alt=""></a>
+                <a href=""> <img src="img/behance.svg" alt=""></a>
+            </div>
+            <img class="hamburger" src="img/hamburger.svg" alt="">
+        </nav>
+    </div>
+    <main>
+        <section class="pettime">
+            <img src="	https://mir-s3-cdn-cf.behance.net/project_modules/fs/275a4f124691237.61097bc34edf6.gif" alt="">
+            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/5d96ab124691237.61097bc34a69f.jpg"
+                alt="">
+            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_3840/3ac2f2124691237.61097bc34acb2.jpg"
+                alt="">
+            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/eb569a124691237.61097bc350681.jpg"
+                alt="">
+            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/4aa42b124691237.61097bc34dd7f.jpg"
+                alt="">
+            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/9c1df4124691237.61097cb0ca6b7.jpg"
+                alt="">
+            <img src="	https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/dd3cd2124691237.61097bc34b2be.jpg"
+                alt="">
+            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/afef6d124691237.61097bc350c43.jpg"
+                alt="">
+            <img src="	https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/7adef7124691237.61097bc34f5f6.jpg"
+                alt="">
+            <img src="	https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/1b248f124691237.61097bc35185a.jpg"
+                alt="">
+            <img src="	https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/40ac3c124691237.61097bc34c032.jpg"
+                alt="">
+            <img src="	https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/febd5c124691237.61097bc35128f.jpg"
+                alt="">
+            <img src="	https://mir-s3-cdn-cf.behance.net/project_modules/fs/5d3c3d124691237.61097bc34ba3c.gif" alt="">
+            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/d1bb54124691237.61097bc34e8b0.jpg"
+                alt="">
+            <img src="	https://mir-s3-cdn-cf.behance.net/project_modules/fs/4bfe0e124691237.61097bc34c7e9.gif" alt="">
+            <img src="	https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/d1ea9d124691237.61097bc34d5c0.jpg"
+                alt="">
+            <img src="	https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/effc4b124691237.61097bc34fe25.jpg"
+                alt="">
+            <img src="	https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/4a7515124691237.61097bc34cdac.jpg"
+                alt="">
+
+
+        </section>
+    </main>
+
+
+
+
+    <footer>
+        <div class="bg_footer">
+            <p>© Ruo Yu Wu 2023</p>
+        </div>
+    </footer>
+
+    <script>
+        function reCaclHeight() {
+            var h = document.getElementById("jobExp").clientHeight;
+            document.getElementById("line1").style.height =
+                parseInt(h / 2 - 32) + "px";
+            document.getElementById("line2").style.height =
+                parseInt(h / 2 - 32) + "px";
+        }
+
+        reCaclHeight();
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>

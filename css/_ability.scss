@@ -1,0 +1,280 @@
+.ability {
+    background-color: $secondary;
+
+
+    .ability-box {
+        padding: 5%;
+        justify-content: center;
+        align-items: center;
+
+        .ability-content {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            // align-items: center;
+
+            .a-c-left {
+                width: 540px;
+                background-color: white;
+                padding: 50px 80px;
+
+                .info {
+                    h2 {
+                        border-bottom: 1.5px solid black;
+                        margin-top: 10px;
+                        padding-bottom: 10px;
+                        font-size: 24px;
+                    }
+                    .basic_info {
+                        display: flex;
+                        flex-direction: row;
+
+                        .info_title {
+                            width: 180px;
+                        }
+                    }
+                }
+
+                .language {
+                    margin-top: 50px;
+                    h2 {
+                        border-bottom: 1.5px solid black;
+                        margin-top: 10px;
+                        padding-bottom: 10px;
+                        font-size: 24px;
+                    }
+
+                    .language_info {
+                        display: flex;
+                        flex-direction: row;
+
+                        .info_title {
+                            width: 180px;
+                        }
+                    }
+                }
+
+                .skills {
+                    margin-top: 50px;
+
+                    h2 {
+                        border-bottom: 1.5px solid black;
+                        margin-top: 40px;
+                        padding-bottom: 10px;
+                        font-size: 24px;
+                    }
+
+
+                    .skills-bar {
+                        display: flex;
+                        flex-direction: row;
+                        margin-bottom: 20px;
+                        margin-top: 20px;
+
+                        .s-content {
+                            width: 130px;
+                        }
+
+                        .bar_90 {
+                            width: 70%;
+                            display: flex;
+                            // width: calc(100% - 180px);
+                            position: relative;
+                            align-items: center;
+
+                            .percentage {
+                                position: absolute;
+                                height: 6px;
+                                width: calc(70% - 30px);
+                                margin-left: 12%;
+                                z-index: 2;
+                                /*設定顯示在最上層*/
+                                background-color: #1D3247;
+                                border-radius: 100px;
+                            }
+
+                            .grey {
+                                width: 70%;
+                                margin-left: 10%;
+                                border: solid #D9D9D9 7px;
+                                align-items: center;
+                                border-radius: 100px;
+                            }
+
+                            .bar_word {
+                                margin-right: 10%;
+                            }
+
+                        }
+
+                        .bar_70 {
+                            width: 70%;
+                            display: flex;
+                            // width: calc(100% - 180px);
+                            position: relative;
+                            align-items: center;
+
+                            .percentage {
+                                position: absolute;
+                                height: 6px;
+                                width: calc(70% - 70px);
+                                margin-left: 12%;
+                                z-index: 2;
+                                /*設定顯示在最上層*/
+                                background-color: #1D3247;
+                                border-radius: 100px;
+                            }
+
+                            .grey {
+                                width: 70%;
+                                margin-left: 10%;
+                                border: solid #D9D9D9 7px;
+                                align-items: center;
+                                border-radius: 100px;
+                            }
+
+                            .bar_word {
+                                margin-right: 10%;
+                            }
+
+                        }
+
+                        .bar_80 {
+                            width: 70%;
+                            display: flex;
+                            // width: calc(100% - 180px);
+                            position: relative;
+                            align-items: center;
+
+                            .percentage {
+                                position: absolute;
+                                height: 6px;
+                                width: calc(70% - 50px);
+                                margin-left: 12%;
+                                z-index: 2;
+                                /*設定顯示在最上層*/
+                                background-color: #1D3247;
+                                border-radius: 100px;
+                            }
+
+                            .grey {
+                                width: 70%;
+                                margin-left: 10%;
+                                border: solid #D9D9D9 7px;
+                                align-items: center;
+                                border-radius: 100px;
+                            }
+
+                            .bar_word {
+                                margin-right: 10%;
+                            }
+
+                        }
+
+                    }
+
+
+
+                }
+            }
+
+            .a-c-right {
+                width: 600px;
+                background-color: white;
+                padding: 50px 80px;
+
+                .education {
+                    h2 {
+                        border-bottom: 1.5px solid black;
+                        margin-top: 5px;
+                        padding-bottom: 10px;
+                        font-size: 24px;
+                    }
+
+                    h3 {
+                        font-size: 20px;
+                    }
+                }
+
+                .job {
+                    margin-top: 60px;
+
+                    h2 {
+                        border-bottom: 1.5px solid black;
+                        margin-top: 10px;
+                        padding-bottom: 10px;
+                        font-size: 24px;
+                    }
+
+                    .job_bar_content {
+                        display: flex;
+                        flex-direction: row;
+                        margin-top: 20px;
+
+                        h3{
+                            font-size: 24px;
+                        }
+    
+                        .date{
+                            padding: 0;
+                            font-size: 16px;
+                            color: grey;
+                        }
+                        p{
+                            margin-top: 8px;
+                            margin-bottom: 20px;
+                        }
+
+                        .job_bar {
+                            justify-content: center;
+                            width: 8%;
+                            align-items: center;
+                            float: left;
+
+                            .decoLine {
+                                width: 30px;
+                                float: left;
+                                margin-top: 5px;
+
+                                .circle {
+                                    width: 10px;
+                                    height: 10px;
+                                    border: 2px solid $primary;
+                                    border-radius: 6px;
+                                    margin: 0 auto;
+                                }
+
+                                .line {
+                                    width: 0;
+                                    height: 100px;
+                                    border-left: 2px solid $primary;
+                                    margin: 0 auto;
+                                }
+                            }
+                        }
+
+                        .job_content {
+                            width: calc(100% - 60px);
+                            // background-color: darkkhaki;
+                            padding: 0 5px;
+                            float: left;
+
+                            h3 {
+                                font-size: 20px;
+                            }
+                        }
+
+                        .clearFloat {
+                            clear: both;
+                        }
+                    }
+                }
+
+            }
+        }
+
+
+    }
+
+
+}

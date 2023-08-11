@@ -1,0 +1,135 @@
+// header {
+//     display: flex;
+//     flex-direction: column;
+     
+//     img {
+//         position: absolute;
+//         left: 50%;
+//         bottom: 600px;
+//     }
+
+//     .title {
+//         position: absolute;
+//         left: 45%;
+//         bottom: 450px;
+//         background-size: cover;
+//         text-align: center;
+//     }
+
+//     .button {
+//         display: flex;
+//         margin-top: 15px;
+//             gap: 20px;
+//             position: absolute;
+//             left: 46%;
+//             bottom: 300px;
+
+//         a {
+//             text-decoration: none;
+//             color: #fff;
+//             background-color: #797979;
+//             padding: 10px 20px;
+//         }
+//     }
+// }
+
+
+header {
+    background-color: #F5F5F5;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+
+    nav{
+        display: flex;
+        align-items: center;
+        margin: 28px 28px;
+        .ruoyu{
+            width: 121px;
+            height: 22px;
+        }
+        .social_media{
+            margin-left: 40px;
+        }
+        .hamburger{
+            width: 32px;
+            height: 32px;
+            margin-left:auto;
+        }
+    }
+   
+     
+    img {
+        margin-bottom: 100px;
+    }
+
+    .title {
+        bottom: 50px;
+        background-size: cover;
+        text-align: center;
+        line-height: 40px;
+        letter-spacing:1px;
+        img {
+            width: 100px;
+            margin-top: 100px;
+        }
+    }
+
+    .header_button {
+        display: flex;
+        margin-top: 80px;
+            gap: 40px;
+            bottom: 300px;
+            justify-content: center;
+            letter-spacing:2px;
+
+        a {
+            text-decoration: none;
+            color: #fff;
+            background-color: #162A4B;
+            padding: 8px 32px;
+            justify-content: center;
+            border-radius: 20px;
+            &:hover {
+                background-color: #b8b8b8;
+            }
+        }
+    }
+    .go_down{
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        margin-top: 120px;
+        a{
+            text-decoration: none;
+            color: #797979;
+        }
+
+        animation: arrmove .95s infinite alternate;
+        -moz-animation: arrmove .95s infinite alternate;
+        -webkit-animation: arrmove .95s infinite alternate;
+
+        animation-timing-function: ease-in-out;
+        @-webkit-keyframes arrmove {
+            0% {
+                transform:translateY(0px)
+            }
+
+            100% {
+                transform:translateY(14px)
+            }
+        }
+
+        @keyframes arrmove {
+            0% {
+                transform:translateY(0px)
+            }
+
+            100% {
+                transform:translateY(12px)
+            }
+        }
+    }
+}
