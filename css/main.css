@@ -9,7 +9,15 @@ header {
 header nav {
   display: flex;
   align-items: center;
-  margin: 28px 28px;
+  position: sticky;
+  top: 0px;
+  padding: 20px;
+  background-color: #F5F5F5;
+  z-index: 5;
+  box-shadow: rgb(216, 216, 216) 0px 0px 10px;
+}
+header nav a:hover {
+  opacity: 50%;
 }
 header nav .ruoyu {
   width: 121px;
@@ -18,13 +26,13 @@ header nav .ruoyu {
 header nav .social_media {
   margin-left: 40px;
 }
+header nav .social_media a:hover {
+  opacity: 30%;
+}
 header nav .hamburger {
   width: 32px;
   height: 32px;
   margin-left: auto;
-}
-header img {
-  margin-bottom: 100px;
 }
 header .title {
   bottom: 50px;
@@ -35,7 +43,8 @@ header .title {
 }
 header .title img {
   width: 100px;
-  margin-top: 100px;
+  margin-top: 180px;
+  margin-bottom: 120px;
 }
 header .header_button {
   display: flex;
@@ -61,6 +70,7 @@ header .go_down {
   gap: 10px;
   justify-content: center;
   margin-top: 120px;
+  padding-bottom: 120px;
   animation: arrmove 0.95s infinite alternate;
   -moz-animation: arrmove 0.95s infinite alternate;
   -webkit-animation: arrmove 0.95s infinite alternate;
@@ -77,317 +87,6 @@ header .go_down a {
   100% {
     transform: translateY(12px);
   }
-}
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-.out-box {
-  width: 100%;
-  margin-bottom: 20px;
-}
-
-.profile-box {
-  display: flex;
-  position: relative;
-  padding: 90px;
-}
-
-.p-left {
-  position: absolute;
-  width: 40%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  z-index: 1;
-  background-color: #EFEFEF;
-  display: flex;
-  align-items: center;
-}
-
-.p-right {
-  position: absolute;
-  width: 60%;
-  z-index: 1;
-  height: 100%;
-  right: 0;
-  top: 0;
-  background-color: #13212F;
-}
-
-/* 利用profile 撐起父元素的高度*/
-.profile {
-  padding: 40px;
-  width: calc(60% - 20px);
-  margin-left: 30%;
-  z-index: 2; /*設定顯示在最上層*/
-  background-color: white;
-  border-radius: 5px;
-}
-
-.profile h2 {
-  font-size: 32px;
-  margin-bottom: 20px;
-}
-
-.profile p {
-  font-size: 18px;
-  line-height: 30px;
-  text-align: justify;
-}
-
-.picBox {
-  width: 24vw;
-  text-align: center;
-  margin-left: 5vw;
-}
-
-.picBox img {
-  width: 20vw;
-  height: 20vw;
-  max-width: 260px;
-  max-height: 260px;
-  margin: 0;
-  border-radius: 50%;
-}
-
-.picBox .name {
-  color: black;
-  font-size: 28px;
-  margin: 20px 0;
-}
-
-.picBox .item {
-  font-size: 16px;
-  height: 32px;
-  padding: 0 15px;
-  line-height: 32px;
-  background-color: #13212F;
-  color: white;
-  display: inline-block;
-  border-radius: 16px;
-  margin: 6px;
-}
-
-.ability {
-  background-color: #efefef;
-}
-.ability .ability-box {
-  padding: 5%;
-  justify-content: center;
-  align-items: center;
-}
-.ability .ability-box .ability-content {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-.ability .ability-box .ability-content .a-c-left {
-  width: 540px;
-  background-color: white;
-  padding: 50px 80px;
-}
-.ability .ability-box .ability-content .a-c-left .info h2 {
-  border-bottom: 1.5px solid black;
-  margin-top: 10px;
-  padding-bottom: 10px;
-  font-size: 24px;
-}
-.ability .ability-box .ability-content .a-c-left .info .basic_info {
-  display: flex;
-  flex-direction: row;
-}
-.ability .ability-box .ability-content .a-c-left .info .basic_info .info_title {
-  width: 180px;
-}
-.ability .ability-box .ability-content .a-c-left .language {
-  margin-top: 50px;
-}
-.ability .ability-box .ability-content .a-c-left .language h2 {
-  border-bottom: 1.5px solid black;
-  margin-top: 10px;
-  padding-bottom: 10px;
-  font-size: 24px;
-}
-.ability .ability-box .ability-content .a-c-left .language .language_info {
-  display: flex;
-  flex-direction: row;
-}
-.ability .ability-box .ability-content .a-c-left .language .language_info .info_title {
-  width: 180px;
-}
-.ability .ability-box .ability-content .a-c-left .skills {
-  margin-top: 50px;
-}
-.ability .ability-box .ability-content .a-c-left .skills h2 {
-  border-bottom: 1.5px solid black;
-  margin-top: 40px;
-  padding-bottom: 10px;
-  font-size: 24px;
-}
-.ability .ability-box .ability-content .a-c-left .skills .skills-bar {
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 20px;
-  margin-top: 20px;
-}
-.ability .ability-box .ability-content .a-c-left .skills .skills-bar .s-content {
-  width: 130px;
-}
-.ability .ability-box .ability-content .a-c-left .skills .skills-bar .bar_90 {
-  width: 70%;
-  display: flex;
-  position: relative;
-  align-items: center;
-}
-.ability .ability-box .ability-content .a-c-left .skills .skills-bar .bar_90 .percentage {
-  position: absolute;
-  height: 6px;
-  width: calc(70% - 30px);
-  margin-left: 12%;
-  z-index: 2;
-  /*設定顯示在最上層*/
-  background-color: #1D3247;
-  border-radius: 100px;
-}
-.ability .ability-box .ability-content .a-c-left .skills .skills-bar .bar_90 .grey {
-  width: 70%;
-  margin-left: 10%;
-  border: solid #D9D9D9 7px;
-  align-items: center;
-  border-radius: 100px;
-}
-.ability .ability-box .ability-content .a-c-left .skills .skills-bar .bar_90 .bar_word {
-  margin-right: 10%;
-}
-.ability .ability-box .ability-content .a-c-left .skills .skills-bar .bar_70 {
-  width: 70%;
-  display: flex;
-  position: relative;
-  align-items: center;
-}
-.ability .ability-box .ability-content .a-c-left .skills .skills-bar .bar_70 .percentage {
-  position: absolute;
-  height: 6px;
-  width: calc(70% - 70px);
-  margin-left: 12%;
-  z-index: 2;
-  /*設定顯示在最上層*/
-  background-color: #1D3247;
-  border-radius: 100px;
-}
-.ability .ability-box .ability-content .a-c-left .skills .skills-bar .bar_70 .grey {
-  width: 70%;
-  margin-left: 10%;
-  border: solid #D9D9D9 7px;
-  align-items: center;
-  border-radius: 100px;
-}
-.ability .ability-box .ability-content .a-c-left .skills .skills-bar .bar_70 .bar_word {
-  margin-right: 10%;
-}
-.ability .ability-box .ability-content .a-c-left .skills .skills-bar .bar_80 {
-  width: 70%;
-  display: flex;
-  position: relative;
-  align-items: center;
-}
-.ability .ability-box .ability-content .a-c-left .skills .skills-bar .bar_80 .percentage {
-  position: absolute;
-  height: 6px;
-  width: calc(70% - 50px);
-  margin-left: 12%;
-  z-index: 2;
-  /*設定顯示在最上層*/
-  background-color: #1D3247;
-  border-radius: 100px;
-}
-.ability .ability-box .ability-content .a-c-left .skills .skills-bar .bar_80 .grey {
-  width: 70%;
-  margin-left: 10%;
-  border: solid #D9D9D9 7px;
-  align-items: center;
-  border-radius: 100px;
-}
-.ability .ability-box .ability-content .a-c-left .skills .skills-bar .bar_80 .bar_word {
-  margin-right: 10%;
-}
-.ability .ability-box .ability-content .a-c-right {
-  width: 600px;
-  background-color: white;
-  padding: 50px 80px;
-}
-.ability .ability-box .ability-content .a-c-right .education h2 {
-  border-bottom: 1.5px solid black;
-  margin-top: 5px;
-  padding-bottom: 10px;
-  font-size: 24px;
-}
-.ability .ability-box .ability-content .a-c-right .education h3 {
-  font-size: 20px;
-}
-.ability .ability-box .ability-content .a-c-right .job {
-  margin-top: 60px;
-}
-.ability .ability-box .ability-content .a-c-right .job h2 {
-  border-bottom: 1.5px solid black;
-  margin-top: 10px;
-  padding-bottom: 10px;
-  font-size: 24px;
-}
-.ability .ability-box .ability-content .a-c-right .job .job_bar_content {
-  display: flex;
-  flex-direction: row;
-  margin-top: 20px;
-}
-.ability .ability-box .ability-content .a-c-right .job .job_bar_content h3 {
-  font-size: 24px;
-}
-.ability .ability-box .ability-content .a-c-right .job .job_bar_content .date {
-  padding: 0;
-  font-size: 16px;
-  color: grey;
-}
-.ability .ability-box .ability-content .a-c-right .job .job_bar_content p {
-  margin-top: 8px;
-  margin-bottom: 20px;
-}
-.ability .ability-box .ability-content .a-c-right .job .job_bar_content .job_bar {
-  justify-content: center;
-  width: 8%;
-  align-items: center;
-  float: left;
-}
-.ability .ability-box .ability-content .a-c-right .job .job_bar_content .job_bar .decoLine {
-  width: 30px;
-  float: left;
-  margin-top: 5px;
-}
-.ability .ability-box .ability-content .a-c-right .job .job_bar_content .job_bar .decoLine .circle {
-  width: 10px;
-  height: 10px;
-  border: 2px solid #13212F;
-  border-radius: 6px;
-  margin: 0 auto;
-}
-.ability .ability-box .ability-content .a-c-right .job .job_bar_content .job_bar .decoLine .line {
-  width: 0;
-  height: 100px;
-  border-left: 2px solid #13212F;
-  margin: 0 auto;
-}
-.ability .ability-box .ability-content .a-c-right .job .job_bar_content .job_content {
-  width: calc(100% - 60px);
-  padding: 0 5px;
-  float: left;
-}
-.ability .ability-box .ability-content .a-c-right .job .job_bar_content .job_content h3 {
-  font-size: 20px;
-}
-.ability .ability-box .ability-content .a-c-right .job .job_bar_content .clearFloat {
-  clear: both;
 }
 
 body {
@@ -466,9 +165,410 @@ a {
   opacity: 0.75;
 }
 
-.my_works {
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.out-box {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.profile-box {
+  display: flex;
+  position: relative;
+  padding: 90px;
+}
+
+.p-left {
+  position: absolute;
+  width: 40%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  background-color: #EFEFEF;
+  display: flex;
+  align-items: center;
+}
+
+.p-right {
+  position: absolute;
+  width: 60%;
+  z-index: 1;
+  height: 100%;
+  right: 0;
+  top: 0;
+  background-color: #13212F;
+}
+
+/* 利用profile 撐起父元素的高度*/
+.profile {
+  padding: 40px;
+  width: calc(65% - 20px);
+  margin-left: 30%;
+  z-index: 2;
+  /*設定顯示在最上層*/
+  background-color: white;
+  border-radius: 5px;
+}
+
+.profile h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.profile p {
+  font-size: 18px;
+  line-height: 30px;
+  text-align: justify;
+}
+
+.picBox {
+  width: 24vw;
+  text-align: center;
+  margin-left: 5vw;
+}
+
+.picBox img {
+  width: 20vw;
+  height: 20vw;
+  max-width: 260px;
+  max-height: 260px;
+  margin: 0;
+  border-radius: 50%;
+}
+
+.picBox .name {
+  color: black;
+  font-size: 28px;
+  margin: 20px 0;
+}
+
+.picBox .item {
+  font-size: 16px;
+  height: 32px;
+  padding: 0 15px;
+  line-height: 32px;
+  background-color: #13212F;
+  color: white;
+  display: inline-block;
+  border-radius: 16px;
+  margin: 6px;
+}
+
+@media (max-width: 800px) {
+  .out-box {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .out-box .profile-box {
+    display: flex;
+    width: 100%;
+    position: relative;
+  }
+  .out-box .profile-box .p-left {
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    left: 0;
+    top: 0px;
+    z-index: 1;
+    background-color: #EFEFEF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .out-box .profile-box .p-left .picBox {
+    background-color: #EFEFEF;
+    text-align: center;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .out-box .profile-box .p-left .picBox img {
+    width: 200px;
+    height: 200px;
+  }
+  .out-box .profile-box .profile {
+    padding: 10%;
+    width: 100%;
+    background-color: white;
+    border-radius: 5px;
+    margin-left: 0;
+  }
+  .out-box .profile-box .profile p {
+    font-size: 14px;
+  }
+  .out-box .profile-box .p-right {
+    width: 100%;
+    background-color: #13212F;
+  }
+}
+.experience .a-experience {
+  margin-top: 3%;
+  display: flex;
+  justify-content: center;
+}
+.experience .a-experience .a-e-content {
+  font-size: 40px;
+  margin-top: 40px;
+  letter-spacing: 2px;
+  color: #3D3D3D;
+}
+.experience .ability {
+  background-color: #efefef;
+}
+.experience .ability .ability-box {
+  padding-bottom: 4%;
+  padding-top: 1%;
+  padding-left: 5%;
+  padding-right: 5%;
+  justify-content: center;
+  align-items: center;
+}
+.experience .ability .ability-box .ability-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.experience .ability .ability-box .ability-content .a-c-left {
+  width: 540px;
+  background-color: white;
+  padding: 50px 80px;
+}
+.experience .ability .ability-box .ability-content .a-c-left .info h2 {
+  border-bottom: 1.5px solid black;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  font-size: 24px;
+}
+.experience .ability .ability-box .ability-content .a-c-left .info .basic_info {
+  display: flex;
+  flex-direction: row;
+}
+.experience .ability .ability-box .ability-content .a-c-left .info .basic_info .info_title {
+  width: 180px;
+}
+.experience .ability .ability-box .ability-content .a-c-left .language {
+  margin-top: 50px;
+}
+.experience .ability .ability-box .ability-content .a-c-left .language h2 {
+  border-bottom: 1.5px solid black;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  font-size: 24px;
+}
+.experience .ability .ability-box .ability-content .a-c-left .language .language_info {
+  display: flex;
+  flex-direction: row;
+}
+.experience .ability .ability-box .ability-content .a-c-left .language .language_info .info_title {
+  width: 180px;
+}
+.experience .ability .ability-box .ability-content .a-c-left .skills {
+  margin-top: 50px;
+}
+.experience .ability .ability-box .ability-content .a-c-left .skills h2 {
+  border-bottom: 1.5px solid black;
+  margin-top: 40px;
+  padding-bottom: 10px;
+  font-size: 24px;
+}
+.experience .ability .ability-box .ability-content .a-c-left .skills .skills-bar {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
   margin-top: 20px;
-  margin-bottom: 60px;
+}
+.experience .ability .ability-box .ability-content .a-c-left .skills .skills-bar .s-content {
+  width: 130px;
+}
+.experience .ability .ability-box .ability-content .a-c-left .skills .skills-bar .bar_90 {
+  width: 70%;
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+.experience .ability .ability-box .ability-content .a-c-left .skills .skills-bar .bar_90 .percentage {
+  position: absolute;
+  height: 6px;
+  width: calc(70% - 30px);
+  margin-left: 12%;
+  z-index: 2;
+  /*設定顯示在最上層*/
+  background-color: #1D3247;
+  border-radius: 100px;
+}
+.experience .ability .ability-box .ability-content .a-c-left .skills .skills-bar .bar_90 .grey {
+  width: 70%;
+  margin-left: 10%;
+  border: solid #D9D9D9 7px;
+  align-items: center;
+  border-radius: 100px;
+}
+.experience .ability .ability-box .ability-content .a-c-left .skills .skills-bar .bar_90 .bar_word {
+  margin-right: 10%;
+}
+.experience .ability .ability-box .ability-content .a-c-left .skills .skills-bar .bar_70 {
+  width: 70%;
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+.experience .ability .ability-box .ability-content .a-c-left .skills .skills-bar .bar_70 .percentage {
+  position: absolute;
+  height: 6px;
+  width: calc(70% - 70px);
+  margin-left: 12%;
+  z-index: 2;
+  /*設定顯示在最上層*/
+  background-color: #1D3247;
+  border-radius: 100px;
+}
+.experience .ability .ability-box .ability-content .a-c-left .skills .skills-bar .bar_70 .grey {
+  width: 70%;
+  margin-left: 10%;
+  border: solid #D9D9D9 7px;
+  align-items: center;
+  border-radius: 100px;
+}
+.experience .ability .ability-box .ability-content .a-c-left .skills .skills-bar .bar_70 .bar_word {
+  margin-right: 10%;
+}
+.experience .ability .ability-box .ability-content .a-c-left .skills .skills-bar .bar_80 {
+  width: 70%;
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+.experience .ability .ability-box .ability-content .a-c-left .skills .skills-bar .bar_80 .percentage {
+  position: absolute;
+  height: 6px;
+  width: calc(70% - 50px);
+  margin-left: 12%;
+  z-index: 2;
+  /*設定顯示在最上層*/
+  background-color: #1D3247;
+  border-radius: 100px;
+}
+.experience .ability .ability-box .ability-content .a-c-left .skills .skills-bar .bar_80 .grey {
+  width: 70%;
+  margin-left: 10%;
+  border: solid #D9D9D9 7px;
+  align-items: center;
+  border-radius: 100px;
+}
+.experience .ability .ability-box .ability-content .a-c-left .skills .skills-bar .bar_80 .bar_word {
+  margin-right: 10%;
+}
+.experience .ability .ability-box .ability-content .a-c-right {
+  width: 600px;
+  background-color: white;
+  padding: 50px 80px;
+}
+.experience .ability .ability-box .ability-content .a-c-right .education h2 {
+  border-bottom: 1.5px solid black;
+  margin-top: 5px;
+  padding-bottom: 10px;
+  font-size: 24px;
+}
+.experience .ability .ability-box .ability-content .a-c-right .education h3 {
+  font-size: 20px;
+}
+.experience .ability .ability-box .ability-content .a-c-right .job {
+  margin-top: 60px;
+}
+.experience .ability .ability-box .ability-content .a-c-right .job h2 {
+  border-bottom: 1.5px solid black;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  font-size: 24px;
+}
+.experience .ability .ability-box .ability-content .a-c-right .job .job_bar_content {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+.experience .ability .ability-box .ability-content .a-c-right .job .job_bar_content h3 {
+  font-size: 24px;
+}
+.experience .ability .ability-box .ability-content .a-c-right .job .job_bar_content .date {
+  padding: 0;
+  font-size: 16px;
+  color: grey;
+}
+.experience .ability .ability-box .ability-content .a-c-right .job .job_bar_content p {
+  margin-top: 8px;
+  margin-bottom: 20px;
+}
+.experience .ability .ability-box .ability-content .a-c-right .job .job_bar_content .job_bar {
+  justify-content: center;
+  width: 8%;
+  align-items: center;
+  float: left;
+}
+.experience .ability .ability-box .ability-content .a-c-right .job .job_bar_content .job_bar .decoLine {
+  width: 30px;
+  float: left;
+  margin-top: 5px;
+}
+.experience .ability .ability-box .ability-content .a-c-right .job .job_bar_content .job_bar .decoLine .circle {
+  width: 10px;
+  height: 10px;
+  border: 2px solid #13212F;
+  border-radius: 6px;
+  margin: 0 auto;
+}
+.experience .ability .ability-box .ability-content .a-c-right .job .job_bar_content .job_bar .decoLine .line {
+  width: 0;
+  height: 100px;
+  border-left: 2px solid #13212F;
+  margin: 0 auto;
+}
+.experience .ability .ability-box .ability-content .a-c-right .job .job_bar_content .job_content {
+  width: 400px;
+  padding: 0 5px;
+  float: left;
+}
+.experience .ability .ability-box .ability-content .a-c-right .job .job_bar_content .job_content h3 {
+  font-size: 20px;
+}
+.experience .ability .ability-box .ability-content .a-c-right .job .job_bar_content .clearFloat {
+  clear: both;
+}
+
+@media (max-width: 800px) {
+  .a-experience {
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+  }
+  .a-experience .a-e-content {
+    font-size: 20px;
+    margin-top: 40px;
+    letter-spacing: 2px;
+    color: #ff0000;
+  }
+  .ability-content {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .ability-content .a-c-left {
+    width: 100%;
+  }
+  .ability-content .a-c-right {
+    width: 100%;
+  }
+}
+.my_works {
+  background-color: white;
+  padding-top: 10px;
+  padding-bottom: 60px;
 }
 .my_works .work_title {
   display: flex;
@@ -480,7 +580,7 @@ a {
   letter-spacing: 2px;
   color: #3D3D3D;
 }
-.my_works nav {
+.my_works .sort {
   position: relative;
   display: flex;
   align-items: center;
@@ -490,7 +590,7 @@ a {
   gap: 40px;
   margin: 10px;
 }
-.my_works nav a {
+.my_works .sort a {
   color: #4E4E4E;
   letter-spacing: 2px;
 }
@@ -507,16 +607,30 @@ a {
 .my_works .works .work_01 a {
   width: 50%;
 }
+.my_works .works .work_01 a:hover {
+  position: relative;
+  content: "Pet Time";
+  transition: opacity 0.42s cubic-bezier(0.15, 0.46, 0.57, 1);
+  opacity: 50%;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.25);
+}
 .my_works .works .work_01 a:hover img {
-  transform: scale(0.92, 0.92);
+  transform: scale(0.98, 0.98);
 }
 .my_works .works .work_01 a:hover::before {
   opacity: 1;
+  position: absolute;
+  top: 50%;
+  left: 44%;
+  text-align: center;
+  color: black;
+  z-index: 30;
 }
 
 .form {
   background: #F5F5F5;
-  padding-bottom: 100px;
+  padding-bottom: 150px;
 }
 .form .form_title {
   display: flex;
@@ -553,30 +667,24 @@ a {
   border-radius: 16px;
 }
 .form .message {
-  position: relative;
+  margin-top: 25px;
+  margin-bottom: 20px;
 }
-.form .message ::-moz-placeholder {
-  position: absolute;
-  top: 20px;
-}
-.form .message ::placeholder {
-  position: absolute;
-  top: 20px;
-}
-.form .message .mb-3 .form-control {
-  height: 220px;
+.form .message .form-control {
+  height: 60px;
   border-radius: 16px;
 }
-.form .message #exampleFormControlInput1 {
-  margin-top: 10px;
+.form .message label {
+  color: #737373;
 }
-.form button {
+
+.btn {
   border: none;
   margin-top: 10px;
   background-color: #13212F;
   width: 100%;
 }
-.form button:hover {
+.btn:hover {
   background-color: #b8b8b8;
 }
 

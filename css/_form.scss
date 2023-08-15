@@ -1,6 +1,6 @@
 .form {
     background: #F5F5F5;
-    padding-bottom: 100px;
+    padding-bottom: 150px;
 
     .form_title {
         display: flex;
@@ -25,7 +25,6 @@
             border-top: none;
             opacity: 1;
             margin-top: 60px;
-
         }
     }
 
@@ -52,15 +51,18 @@
     }
 
 
-    .email {
-        .mb-3 {
+    .message {
+        margin-top: 25px;
+        margin-bottom: 20px;
             .form-control {
-                height: 60px;
-                border-radius: 16px;
+                    height: 60px;
+                    border-radius: 16px;
+                }
+                label{
+                    color: #737373;
+                }
             }
         }
-    }
-}
 
 // .message {
 //     position: relative;
@@ -82,7 +84,7 @@
 //     }
 // }
 
-button {
+.btn {
     border: none;
     margin-top: 10px;
     background-color: #13212F;

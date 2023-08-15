@@ -6,21 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ruoyu</title>
     <link rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-    <header>
-        <nav>
-            <img class="ruoyu" src="img/ruoyu.svg" alt="">   
+    <header id="home_page">
+        <nav class="header_fixed">
+            <!-- <img class="ruoyu" src="img/ruoyu.svg" alt="">    -->
+            <a href="#home_page"> <img class="ruoyu" src="img/ruoyu.svg" alt=""></a>
             <div class="social_media">
                 <a href=""> <img src="img/FB.svg" alt=""></a>
                 <a href=""> <img src="img/indeed.svg" alt=""></a>
                 <a href=""> <img src="img/ig.svg" alt=""></a>
-                <a href=""> <img src="img/behance.svg" alt=""></a>
+                <a href="https://www.behance.net/crystal17360a4" class="behance"> <img src="img/behance.svg" alt=""></a>
             </div>
             <img class="hamburger" src="img/hamburger.svg" alt="">
         </nav>
@@ -31,20 +32,20 @@
             <p data-wow-duration="0.6s" data-wow-delay="0.1s" class="wow animate__animated animate__pulse">A UX and UI designer based in Taiwan.</p>
         </div>
 
-        <div class="header_button ">
+        <div class="header_button">
             <a href="#about_me">About Me</a>
             <a href="#my_works_id">My Works</a>
         </div>
 
-        <div class="go_down">
+        <div class="go_down" id="about_me">
             <a href="#">Scroll Down</a>
             <img src="img/solar_arrow-up-outline.svg" alt="">
         </div>
 
-    </header>
+
     <main>
         <!-- About -->
-        <div class="out-box" id="about_me">
+        <div class="out-box">
             <div class="profile-box">
                 <div class="p-left">
                     <div class="picBox">
@@ -77,8 +78,14 @@
         </div>
 
         <!-- Experience& Professional skills -->
-        <section>
+        <section class="experience">
+            
             <div class="ability">
+                 <div class="a-experience">
+                <p class="a-e-content">Experience& Professional skills</p>
+            </div>
+               
+                
                 <div class="ability-box">
                     <div class="a-background"></div>
                     <div class="ability-content">
@@ -202,7 +209,7 @@
                                 <p>2014/09 - 2018/06</p>
                             </div>
                             <div class="job">
-                                <h2>Job Experience</h2>
+                                <h2>Job Experience &nbsp;&nbsp;</b>( 5+ years )</h2>
                                 <div class="job_bar_content" onresize="reCaclHeight()">
                                     <div class="job_bar" id="jobBox">
                                         <div class="decoLine">
@@ -221,7 +228,6 @@
                                             <br>2. User research and competitor analysis
                                             <br>3. Create prototypes and wireframes
                                         </p>
-
 
                                         <h3>Modo Design - Assistant Designer </h3>
                                         <h7 class="date">( 2018/12 - 2020/03 )</h7>
@@ -243,29 +249,30 @@
                             </div>
                         </div>
                     </div>
+                     <div id="my_works_id"></div>
                 </div>
             </div>
             </div>
         </section>
         <!-- My works -->
-        <section class="my_works" id="my_works_id">
+        <section class="my_works">
             <div class="work_title">
                 <p>My Works</p>
             </div>
-            <nav>
+            <div class="sort">
                 <p><a href="">All</a></p>
                 <p><a href="">UI/UX</a></p>
                 <p><a href="">WEB</a></p>
                 <p><a href="">Machine&nbsp;Interface</a></p>
                 <p><a href="">Product&nbsp;Design</a></p>
-            </nav>
+            </div>
 
             
             <div class="container">
                 <div class="works">
                     <div class="work_01 zoom">
                         <a href="pettime.html"><img src="img/pettime.svg" alt=""></a>
-                        <a href=""><img src="img/eva_air.svg" alt=""></a>
+                        <a href="eva.html"><img src="img/eva_air.svg" alt=""></a>
                         <a href=""><img src="img/go_shot.svg" alt=""></a>
                         <a href=""><img src="img/fashion_week.svg" alt=""></a>
                         <a href=""><img src="img/ZUZU.svg" alt=""></a>
@@ -307,8 +314,6 @@
         </section>
 
 
-        </section>
-
 
         <!-- Form, -->
         <section class="form">
@@ -335,7 +340,7 @@
 
                 <div class="message">
                 <div class="form-floating">
-                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 180px"></textarea>
                     <label for="floatingTextarea2">Your Message</label>
                   </div>
                 </div>
@@ -355,6 +360,7 @@
             </div>
         </section>
     </main>
+</header>
 
     <footer>
         <div class="bg_footer"><p>© Ruo Yu  Wu 2023</p></div>
