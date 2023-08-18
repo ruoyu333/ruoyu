@@ -29,19 +29,11 @@
     }
 
     .container {
-        width: 800px;
+        width: 60%;
 
         .row {
-            .col {
-                .form-control {
-                    height: 60px;
-                    border-radius: 16px;
-                }
-            }
-        }
-
-        .email {
-            .mb-3 {
+            .col-12 {
+                gap: 20px;
                 .form-control {
                     height: 60px;
                     border-radius: 16px;
@@ -50,10 +42,9 @@
         }
     }
 
-
     .message {
         margin-top: 25px;
-        margin-bottom: 20px;
+        margin-bottom: 24px;
             .form-control {
                     height: 60px;
                     border-radius: 16px;
@@ -62,27 +53,8 @@
                     color: #737373;
                 }
             }
+
         }
-
-// .message {
-//     position: relative;
-
-//     ::placeholder {
-//         position: absolute;
-//         top: 20px;
-//     }
-
-//     .mb-3 {
-//         .form-control {
-//             height: 220px;
-//             border-radius: 16px;
-//         }
-//     }
-
-//     #exampleFormControlInput1 {
-//         margin-top: 10px;
-//     }
-// }
 
 .btn {
     border: none;
@@ -112,3 +84,45 @@ footer {
         }
     }
 }
+
+@media(max-width: 1180px){
+    .container{
+        width: 70% !important;
+    }
+}
+
+@media(max-width: 700px){
+
+    .form .form_title p {
+        font-size: 24px;
+        margin-top: 80px;
+        margin-bottom: 40px;
+        letter-spacing: 2px;
+        color: #3D3D3D;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 80% !important;
+    }
+    .row{
+        gap: 25px;
+        width: 100%;
+        
+    }
+    .col{
+        flex: none;
+        
+    }
+    // .form .container .row .col .form-control {
+    //     margin-bottom: 20px;
+    // }
+    .form .container .email .mb-3 .form-control {
+        height: 60px;
+        border-radius: 16px;
+        width: 100%;
+    }
+
+    
+    }

@@ -304,26 +304,43 @@
 }
 
 
-@media(max-width: 800px){
+@media(max-width: 1180px){
 
-    .a-experience {
-        margin-top: 3%;
-        display: flex;
-        justify-content: center;
-    
-        .a-e-content{
-            font-size: 20px;
-            margin-top: 40px;
-            letter-spacing: 2px;
-            color: #ff0000;
+        .experience .a-experience .a-e-content{
+            font-size: 36px;
+            margin-bottom: 2%;
+            margin-top: 5%;
         }
-    }
 
+
+
+
+.experience .ability .ability-box .ability-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 8%;
+    padding-right: 8%;
+    margin-top: 7%;
+    
+}
+
+
+.experience .ability .ability-box .ability-content .a-c-left {
+    scale: 111%;
+    padding: 50px;
+    margin-bottom: 0px;
+}
+.experience .ability .ability-box .ability-content .a-c-right {
+
+    padding: 50px;
+   
+}
 
     .ability-content{
         display: flex;
-        justify-content: center;
-        width: 100%;
+        align-items: center;
+
         .a-c-left{
             width: 100%;
         }
@@ -331,7 +348,42 @@
             width: 100%;
         }
     }
+}
+
+@media(max-width: 700px){
+
+    .experience .a-experience .a-e-content{
+        font-size: 20px;
+        margin-bottom: 2%;
+        margin-top: 5%;
+    }
 
 
+.experience .ability .ability-box .ability-content .a-c-left {
+scale: 76%;
+padding: 50px;
+}
+.experience .ability .ability-box .ability-content .a-c-right {
+scale: 68%;
+    padding: 50px;
 
+}
+
+.ability-content{
+    display: flex;
+    align-items: center;
+    height: 1300px;
+
+
+    .a-c-left{
+        width: 100%;
+        position: relative;
+        top: 10%;
+    }
+    .a-c-right{
+        width: 100%;
+        position: relative;
+        top: -15%;
+    }
+}
 }
