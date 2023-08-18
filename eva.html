@@ -34,9 +34,11 @@
             width: 121px;
             height: 22px;
         }
+        
         .social_media{
             margin-left: 40px;
         }
+    
         .hamburger{
             width: 32px;
             height: 32px;
@@ -44,12 +46,13 @@
         }
     }
 
+
     nav>a{
             &:hover{
                 opacity: 50%;
             }
         }
-
+        
         .pettime {
             display: flex;
             align-items: center;
@@ -63,6 +66,13 @@
             /* box-shadow:1px 1px 1px rgb(174, 174, 174); */
             box-shadow: rgb(241, 241, 241) 0px 0px 10px;
         }
+
+        .social_media>a:hover{
+            opacity: 30%;
+        }
+
+        
+
     </style>
 </head>
 
@@ -76,10 +86,35 @@
                 <a href=""> <img src="img/ig.svg" alt=""></a>
                 <a href="https://www.behance.net/crystal17360a4"> <img src="img/behance.svg" alt=""></a>
             </div>
+            <div class="hamburger"  data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
             <img class="hamburger" src="img/hamburger.svg" alt="">
+            </div>
         </nav>
 
-    
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html#about_me">About Me</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html#work_exp">My Exp.</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#my_works_id">My Works</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html#id_form">Contact Me</a>
+                  </li>
+
+              </ul>
+            </div>
+          </div>
+
     <main>
         <section class="pettime">
             <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/bd301c123206671.60eaa8b2683b5.jpg" alt="">
@@ -88,9 +123,6 @@
             <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/3911b3123206671.60eaa8b26a958.jpg" alt="">
             <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/f1227d123206671.60eacaf71b289.jpg" alt="">
             <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/1f7aa1123206671.60f27d348a2dd.jpg" alt="">
-
-
-
         </section>
     </main>
 </div>
@@ -126,3 +158,5 @@
 </body>
 
 </html>
+
+

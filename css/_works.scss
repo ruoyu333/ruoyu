@@ -99,6 +99,11 @@
 }
 
 @media(max-width: 700px){
+    .my_works p{
+        font-size: 24px !important;
+        margin-top: 16px !important;
+        margin-bottom: 16px !important;
+    }
     .works {
         // display: flex;
         // flex-direction: column;
