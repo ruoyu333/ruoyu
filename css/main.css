@@ -96,7 +96,7 @@ header .go_down a {
   color: #464646;
 }
 .nav-item:hover {
-  opacity: 60%;
+  opacity: 30%;
 }
 
 body {
@@ -754,7 +754,7 @@ a {
     width: 100%;
   }
   .works .work_01 a {
-    width: 50%;
+    width: auto !important;
   }
 }
 .form {
