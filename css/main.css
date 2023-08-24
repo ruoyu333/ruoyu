@@ -333,7 +333,7 @@ a {
     width: 100%;
     padding: 20px 40px;
   }
-  .out-box .p-left {
+  .out-box .profile-box .p-left {
     width: 100%;
     height: 260px;
     z-index: 1;
@@ -341,7 +341,7 @@ a {
     display: flex;
     margin-top: 40px;
   }
-  .out-box .p-left .picBox {
+  .out-box .profile-box .p-left .picBox {
     background-color: #EFEFEF;
     text-align: center;
     width: 100%;
@@ -352,26 +352,26 @@ a {
     height: 480px;
     align-items: center;
   }
-  .out-box .p-left .picBox img {
+  .out-box .profile-box .p-left .picBox img {
     width: 200px;
     height: 200px;
     margin-top: 50px;
   }
-  .out-box .profile {
+  .out-box .profile-box .profile {
     width: 100%;
     background-color: white;
     border-radius: 5px;
     margin-left: 0;
     margin-top: 390px;
   }
-  .out-box .profile p {
+  .out-box .profile-box .profile p {
     width: 100%;
     font-size: 14px;
   }
-  .out-box .p-right {
+  .out-box .profile-box .p-right {
     top: 90px;
     width: 100%;
-    height: 70% !important;
+    height: 65% !important;
     top: 390px;
     background-color: #13212F;
   }
@@ -647,8 +647,8 @@ a {
 @media (max-width: 700px) {
   .experience .a-experience .a-e-content {
     font-size: 20px;
-    margin-bottom: 2%;
-    margin-top: 5%;
+    margin-bottom: 4%;
+    margin-top: 12%;
   }
   .experience .ability .ability-box .ability-content .a-c-left {
     scale: 76%;
@@ -657,6 +657,13 @@ a {
   .experience .ability .ability-box .ability-content .a-c-right {
     scale: 68%;
     padding: 50px;
+  }
+  .experience .ability .ability-box .ability-content .a-c-left {
+    width: 480px;
+  }
+  .experience .ability .ability-box .ability-content .a-c-right {
+    width: 536px;
+    margin-top: 20px;
   }
   .ability-content {
     display: flex;

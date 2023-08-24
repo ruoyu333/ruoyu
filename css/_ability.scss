@@ -354,8 +354,8 @@
 
     .experience .a-experience .a-e-content{
         font-size: 20px;
-        margin-bottom: 2%;
-        margin-top: 5%;
+        margin-bottom: 4%;
+        margin-top: 12%;
     }
 
 
@@ -367,6 +367,14 @@ padding: 50px;
 scale: 68%;
     padding: 50px;
 
+}
+
+.experience .ability .ability-box .ability-content .a-c-left {
+    width: 480px;
+}
+.experience .ability .ability-box .ability-content .a-c-right {
+    width: 536px;
+    margin-top: 20px;
 }
 
 .ability-content{
