@@ -363,6 +363,7 @@ a {
     border-radius: 5px;
     margin-left: 0;
     margin-top: 390px;
+    padding: 20px !important;
   }
   .out-box .profile-box .profile p {
     width: 100%;
