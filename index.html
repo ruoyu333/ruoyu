@@ -505,17 +505,9 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/
         reCaclHeight();
     </script>
 
-    <script>
- $(document).ready(function() {
-  $('#magicLink a[href*="#"]:not([href="#"])').click(function () {
-   var target = $(this.hash);
-   $('html,body').animate({
-    scrollTop: target.offset().top - 90
-   }, 1000);
-   return false;
-  });
- });
- $('.menu_box a').click(function () {
+   <script>
+ 
+ $('.nav-item a').click(function () {
      $('body').attr('style', '');
      $('.offcanvas.offcanvas-end').removeClass('show');
      $('.offcanvas-backdrop.fade.show').remove();
