@@ -35,10 +35,10 @@ header nav .social_media a:hover {
     flex: 1;
 }
 .mydvdv a{
- padding: 6px 20px;
+ padding: 4px 20px;
     margin-right: 17px;
     border: #13212f 2pt solid;
-    font-size: max(1*(1vw + 1vh) / 2, 16px);
+    font-size: max(1*(1vw + 1vh) / 2, 15px);
     border-radius: 555px;
     color: #13212f;
 }
