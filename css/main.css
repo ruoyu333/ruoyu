@@ -29,7 +29,24 @@ header nav .social_media {
 header nav .social_media a:hover {
   opacity: 30%;
 }
-.mydvdv{}
+.mydvdv{
+ display: flex;
+    justify-content: flex-end;
+    flex: 1;
+}
+.mydvdv a{
+ padding: 7px 20px;
+    margin-right: 17px;
+    border: #13212f 2pt solid;
+    font-size: max(1*(1vw + 1vh) / 2, 16px);
+    border-radius: 555px;
+    color: #13212f;
+}
+.mydvdv a:hover{
+ background: #13212f;
+    opacity: 1;
+    color: #ffffff;
+}
 
 header nav .hamburger {
   width: 32px;
