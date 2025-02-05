@@ -740,9 +740,7 @@ a {
 .my_works .works .work_01 img {
   width: 100%;
 }
-.my_works .works .work_01 a {
-  width: 50%;
-}
+
 .my_works .works .work_01 a:hover {
   position: relative;
   content: "Pet Time";
