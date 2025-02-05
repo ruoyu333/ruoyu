@@ -900,6 +900,13 @@ footer .bg_footer p {
 }/*# sourceMappingURL=main.css.map */
 
 @media screen and (max-width: 480px){
- .mydvdv a{margin-right: 10px;padding: 4px 20px 5px 20px;padding: 4px 17px 5px 17px;text-align: left;}
+ .mydvdv a{margin-right: 10px;padding: 4px 20px 5px 20px;padding: 4px 17px 5px 17px;}
  header nav .social_media{margin-left: 5px;}
+ .out-box .profile-box{display: flex;flex-direction: column;padding: 0 0;background: #162a4b;}
+ .out-box .profile-box .p-left{margin-top: 0;position: relative;height: auto;}
+ .out-box .profile-box .p-right{position: relative;}
+ .out-box .profile-box .profile{padding: 30px !important;width: 88%;margin: 30px auto;}
+ .out-box .profile-box .profile p{text-align: left;}
+ .experience .a-experience .a-e-content{margin: 50px 0;}
+ .out-box{margin: 0;}
 }
