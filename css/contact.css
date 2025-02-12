@@ -3,24 +3,26 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin: 80px 0 0;
+    margin: 120px 0 0;
+    background: #F5F5F5;
+    padding: 136px 0;
 }
 .dstitle h5{
     color: #162a4b;
-    font-size: max(1.5*(1vw + 1vh) / 2, 20px);
+    font-size: max(2.8*(1vw + 1vh) / 2, 24px);
     font-weight: 400;
 }
 a.mabottom{
     display: flex;
     position: relative;
-    width: 181px;
+    width: 180px;
     background: #ffffff;
     border-radius: 40px;
-    padding: 5px 12px;
+    padding: 5px 10px;
     box-shadow: 0 0 0.8em 0 rgba(2, 2, 2, .16);
-    margin: 20px 20px;
+    margin: 60px 20px 0;
     color: #162a4b;
-    border: antiquewhite 1px solid;
+    border: rgb(209 209 209 / 55%) 1px solid;
 }
 a.mabottom:hover{
     background: #ffffff;
@@ -42,7 +44,7 @@ a.mabottom p{
     display: flex;
     align-items: center;
     width: 100%;
-    justify-content: space-around;
+    justify-content: center;
     margin-bottom: 0;
 }
 a.mabottom p span{
