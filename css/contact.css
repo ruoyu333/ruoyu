@@ -1,16 +1,32 @@
 .dem3_box{
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 80px 0 0;
+}
+.dstitle h5{
+    color: #162a4b;
+    font-size: max(1.5*(1vw + 1vh) / 2, 20px);
+    font-weight: 400;
 }
 a.mabottom{
     display: flex;
     position: relative;
-    width: 200px;
+    width: 181px;
     background: #ffffff;
     border-radius: 40px;
-    padding: 12px 12px;
+    padding: 5px 12px;
     box-shadow: 0 0 0.8em 0 rgba(2, 2, 2, .16);
     margin: 20px 20px;
+    color: #162a4b;
+    border: antiquewhite 1px solid;
+}
+a.mabottom:hover{
+    background: #ffffff;
+}
+a.mabottom:hover .svgg svg{
+    animation: jump 0.5s infinite alternate;
 }
 
 a.mabottom:hover rect{
@@ -27,10 +43,11 @@ a.mabottom p{
     align-items: center;
     width: 100%;
     justify-content: space-around;
+    margin-bottom: 0;
 }
 a.mabottom p span{
-    text-transform: uppercase;
-    font-size: max(1*(1vw + 1vh) / 2, 15px);
+    font-size: max(1*(1vw + 1vh) / 2, 14px);
+    letter-spacing: 0.03em;
 }
 .wowdreenday{
     overflow: visible;
@@ -57,8 +74,8 @@ a.mabottom p span{
     position: absolute;
 }
 .svgg{
-    background: #162A4B;
-    width: 38px;
+    /* background: #162A4B; */
+    width: 40px;
     aspect-ratio: 1/1;
     border-radius: 50%;
     display: flex;
@@ -67,7 +84,12 @@ a.mabottom p span{
     justify-content: center;
 }
 .svgg svg{
-    width: 20px;
+    width: 26px;
     aspect-ratio: 1/1;
-    fill: #ffffff;
 }
+.svgg svg path{stroke: #162a4b;}
+
+@keyframes jump {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-5px); }
+        }
