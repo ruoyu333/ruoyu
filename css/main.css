@@ -255,6 +255,7 @@ a {
 }
 
 .picBox {
+  overflow: hidden;
   width: 24vw;
   text-align: center;
   margin-left: 5vw;
