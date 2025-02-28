@@ -17,7 +17,7 @@
  -webkit-animation: picture_scroll 40s linear infinite;
  animation: picture_scroll 20s linear infinite;
  transform: translateX(0%);
- width: 140vw;
+ width: 160vw;
  justify-content: center;
 }
 
@@ -25,7 +25,7 @@
  display: flex;
  position: relative;
  padding: 15px 0;
- width: 280vw;
+ width: 320vw;
  position: relative;
  top: 0%;
  z-index: 0;
