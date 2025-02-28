@@ -14,7 +14,7 @@
  display: flex;
  text-align: center;
  transition: all .7s ease-out;
- -webkit-animation: picture_scroll 40s linear infinite;
+ -webkit-animation: picture_scroll 20s linear infinite;
  animation: picture_scroll 20s linear infinite;
  transform: translateX(0%);
  width: 160vw;
