@@ -1,1 +1,74 @@
-#work_box{}
+#work_box{
+    position: relative;
+}
+
+.runingtext>div {
+ position: relative;
+ padding: 10px 0px;
+ display: flex;
+ text-align: center;
+ transition: all .7s ease-out;
+ -webkit-animation: picture_scroll 40s linear infinite;
+ animation: picture_scroll 20s linear infinite;
+ transform: translateX(0%);
+ width: 100%;
+ justify-content: space-between;
+}
+
+.runingtext {
+ display: flex;
+ position: relative;
+ padding: 15px 0;
+ width: 200%;
+ position: relative;
+ top: 0%;
+ z-index: 0;
+}
+
+.runingtext .focus {
+ margin: 0 9px;
+ display: flex;
+ height: 120px;
+ align-items: center;
+}
+
+.clickshow > div {
+    display: none;
+}
+.clickshow > div h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.clickshow > div p {
+    font-size: 16px;
+}
+@keyframes picture_scroll {
+ from {
+  transform: translateX(-0%);
+ }
+
+ to {
+  transform: translateX(-50%);
+ }
+}
+
+@-webkit-keyframes picture_scroll {
+ from {
+  -webkit-transform: translateX(0%);
+ }
+
+ to {
+  -webkit-transform: translateX(-100%);
+ }
+}
+.runingtext>div p{
+ color: #4b4b4b;
+ font-size: 80px;
+ -webkit-text-stroke: 1px rgb(26 26 26 / 20%);
+ -webkit-text-fill-color: transparent;
+ margin-bottom: -50px;
+ margin-left: -14px;
+ font-weight: 800;
+ line-height: 70%;
+ margin: 0 20px;
+}
