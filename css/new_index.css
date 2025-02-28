@@ -17,7 +17,7 @@
  -webkit-animation: picture_scroll 40s linear infinite;
  animation: picture_scroll 20s linear infinite;
  transform: translateX(0%);
- width: 100vw;
+ width: 140vw;
  justify-content: center;
 }
 
@@ -25,7 +25,7 @@
  display: flex;
  position: relative;
  padding: 15px 0;
- width: 200vw;
+ width: 280vw;
  position: relative;
  top: 0%;
  z-index: 0;
@@ -98,10 +98,25 @@
   background: #ffffff;
   filter: drop-shadow(0px 11px 8px rgba(18, 18, 18, 0.05));
 }
+.work_item:hover{
+    -moz-transform: translateY(-0.75em);
+    -webkit-transform: translateY(-0.75em);
+    -o-transform: translateY(-0.75em);
+    -ms-transform: translateY(-0.75em);
+    transform: translateY(-0.25em);
+}
+.work_item:hover .we_left img{
+ -moz-transform: scale(1.2);
+ -webkit-transform: scale(1.2);
+ -o-transform: scale(1.2);
+ -ms-transform: scale(1.2);
+ transform: scale(1.2);
+}
 a.maskuplink{
     position: absolute;
     width: 100%;
     height: 100%;
+    z-index: 2;
 }
 .work_item.even_item{
     grid-template-columns: 55% 44%;
@@ -143,6 +158,39 @@ a.maskuplink{
 .work_item a.mabottom{
     width: 210px;
     margin: 30px 0 0;
+    background: #162A4B;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -ms-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+.work_item , .work_item *{
+ -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -ms-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+
+.work_item:hover a.mabottom{
+ background: #ffffff;
+}
+.work_item:hover a.mabottom p{
+    color: #162a4b;
+}
+.work_item:hover a.mabottom rect{
+    stroke-dasharray: 125%, 0;
+    stroke-dashoffset: 0;
+    -webkit-transition: stroke-dasharray .9s cubic-bezier(.25,1,.5,1), 
+                        stroke-dashoffset .9s cubic-bezier(.25,1,.5,1);
+
+    transition: stroke-dasharray .9s cubic-bezier(.25,1,.5,1), 
+                stroke-dashoffset .9s cubic-bezier(.25,1,.5,1);
+}
+
+.work_item a.mabottom p{
+    color: #ffffff;
 }
 .work_item a.mabottom p span{
     font-size: 16px;
@@ -151,10 +199,11 @@ a.maskuplink{
     display: flex;
     justify-content: flex-start;
 }
-.runingtext.doenJ{width: 270%;}
+.runingtext.doenJ{width: 310vw;}
 .runingtext.doenJ div{
     grid-template-columns: 100%;
     display: grid;
+    width: 155vw;
 }
 .runingtext.doenJ div img{
 }
