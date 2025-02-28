@@ -34,13 +34,14 @@
 .runingtext .focus {
  margin: 0 9px;
  display: grid;
- grid-template-columns: 33% 33% 33%;
+ grid-template-columns: 29% 29% 29%;
  object-fit: cover;
  align-items: center;
+ gap: 5%;
 }
 .runingtext .focus img{
     width: 100%;
-    margin: 0 45px;
+    margin: 0;
     height: 100%;
     display: flex;
 }
@@ -150,10 +151,10 @@ a.maskuplink{
     display: flex;
     justify-content: flex-start;
 }
-.runingtext.doenJ{width: 280%;}
+.runingtext.doenJ{width: 270%;}
 .runingtext.doenJ div{
-    width: 140%;
     grid-template-columns: 100%;
+    display: grid;
 }
 .runingtext.doenJ div img{
 }
