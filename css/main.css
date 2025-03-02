@@ -30,15 +30,19 @@ header nav .social_media a:hover {
   opacity: 30%;
 }
 
-.mydvdv_aboutme{
-   display: flex;
+.mydvdv_aboutme {
+    display: flex;
     justify-content: flex-end;
+    align-items: center; 
     flex: 1;
+    width: 100%; 
 }
 
-.mydvdv_aboutme a{
-   font-size: max(1*(1vw + 1vh) / 2, 15px);
+.mydvdv_aboutme a {
+    font-size: max(1 * (1vw + 1vh) / 2, 15px);
     color: #13212f;
+    text-decoration: none; 
+    padding: 10px 20px;
 }
 
 .mydvdv{
