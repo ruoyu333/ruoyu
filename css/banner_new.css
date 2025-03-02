@@ -33,6 +33,10 @@
     display: flex;
     justify-content: flex-end;
 }
+.pc_banner .bannerright svg{
+    width: 490px;
+    aspect-ratio: 4/6;
+}
 
 .ml6 {
   position: relative;
@@ -79,7 +83,8 @@
 }
 @media screen and (max-width:1470px){
     .pc_banner .bannerright svg{
-        height: calc(100vh - 120px);
+        height: calc(100vh - 138px);
+        width: 350px;
     }
 }
 @media screen and (max-width:980px){
