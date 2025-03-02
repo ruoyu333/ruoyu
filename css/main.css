@@ -29,6 +29,18 @@ header nav .social_media {
 header nav .social_media a:hover {
   opacity: 30%;
 }
+
+.mydvdv_aboutme{
+   display: flex;
+    justify-content: flex-end;
+    flex: 1;
+}
+
+.mydvdv_aboutme a{
+   font-size: max(1*(1vw + 1vh) / 2, 15px);
+    color: #13212f;
+}
+
 .mydvdv{
  display: flex;
     justify-content: flex-end;
