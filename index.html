@@ -19,6 +19,8 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/
     <link rel="shortcut icon" type="image/x-icon" href="https://ruoyu333.github.io/ruoyu/favicon.ico">
 <link href="https://ruoyu333.github.io/ruoyu/css/contact.css" rel="stylesheet">
 <link href="https://ruoyu333.github.io/ruoyu/css/new_index.css" rel="stylesheet">
+<link href="https://ruoyu333.github.io/ruoyu/css/banner_new.css" rel="stylesheet">
+
 <script src="https://ruoyu333.github.io/ruoyu/js/jquery-1.10.js"></script>
 </head>
 
@@ -695,6 +697,43 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/
     <script>
         new WOW().init();
         </script>
+<script>
+webscroll();
+$(window).scroll(webscroll);
+function webscroll(){
+ var docHeight = $(document).height();
+ var headerHeight = $('header').height() + 20;
+ var footerHeight = $('footer').height() - 50;
+ var windowHeight = $(window).height();
+ var windowScrollTop = $(window).scrollTop();
+ var endPoint = docHeight - footerHeight;
+
+ if(windowScrollTop > 50){
+  $('header').addClass('scroll');
+ }else{
+  $('header').removeClass('scroll');
+ }
+}
+// Wrap every letter in a span
+var textWrapper = document.querySelector('.ml6 .letters');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml6 .letter',
+    translateY: ["1.1em", 0],
+    translateZ: 0,
+    duration: 750,
+    delay: (el, i) => 50 * i
+  }).add({
+    targets: '.ml6',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+</script>
+
 </body>
 
 </html>
