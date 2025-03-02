@@ -5,10 +5,13 @@
     width: 100%;
     grid-template-columns: 51% 50%;
     justify-content: end;
-    margin-top: 30px;
+    padding-top: 30px;
+    padding-bottom: 50px;
 }
+
 .scroll .pc_banner{
     background: #162a4b;
+    padding-top: 145px;
 }
 .scroll .changvolor{fill:#D0D0D0;}
 .pc_banner{
@@ -35,6 +38,7 @@
   position: relative;
   font-weight: 900;
   font-size: 3.3em;
+  margin-bottom: 40px;
 }
 .bannerleft p{
     font-family:"Raleway", sans-serif;
