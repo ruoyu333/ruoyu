@@ -1,11 +1,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 .mb_banner{}
-.pc_banner{}
+.pc_banner{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 51% 50%;
+    justify-content: end;
+    margin-top: 30px;
+}
+.scroll .pc_banner{
+    background: #162a4b;
+}
+.scroll .changvolor{fill:#D0D0D0;}
+.pc_banner{
+     -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -ms-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+.pc_banner .bannerleft{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px 0px 0px 200px;
+    justify-content: center;
+    position: relative;
+}
+.pc_banner .bannerright{
+    display: flex;
+    justify-content: flex-end;
+}
+
 .ml6 {
   position: relative;
   font-weight: 900;
   font-size: 3.3em;
 }
+.bannerleft p{
+    font-family:"Raleway", sans-serif;
+    font-size: max(1.7*(1vw + 1vh) / 2, 20px);
+    font-weight: 300;
+    margin-bottom: 100px;
+}
+.scroll .bannerleft p , .scroll .ml6 .letter{color:white;}
+
 .ml6 .text-wrapper {
   position: relative;
   display: inline-block;
@@ -18,10 +56,28 @@
 .ml6 .letter {
   display: inline-block;
   line-height: 1em;
+  font-size:max(4.9*(1vw + 1vh) / 2, 40px);
   font-family: "Raleway", sans-serif;
   font-weight: 300;
 }
-
-@media screen and (max-width:780px){
-    
+.pc_banner .go_down{
+    display: flex;
+    padding-bottom: 0px;
+    position: absolute;
+    bottom: 30px;
+}
+.pc_banner .go_down img{
+    width: 30px;
+    height: 30px;
+}
+@media screen and (min-width:981px){
+   .mb_banner{display:none}
+}
+@media screen and (max-width:1470px){
+    .pc_banner .bannerright svg{
+        height: calc(100vh - 120px);
+    }
+}
+@media screen and (max-width:980px){
+    .pc_banner{display:none}
 }
