@@ -206,6 +206,10 @@ a.maskuplink{
 .runingtext.doenJ>div p{
     font-size: max(7.5*(1vw + 1vh) / 2, 80px);
 }
+
+.runingtext.doenJ >div{
+    animation: picture_scroll 10s linear infinite;
+}
 @media screen and (max-width: 980px){
  .work_item{
     display: flex;
