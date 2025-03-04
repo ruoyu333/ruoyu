@@ -155,6 +155,25 @@
     <script>
         new WOW().init();
     </script>
+
+<script>
+webscroll();
+$(window).scroll(webscroll);
+function webscroll(){
+ var docHeight = $(document).height();
+ var headerHeight = $('.works_header').height() + 20;
+ var footerHeight = $('footer').height() - 50;
+ var windowHeight = $(window).height();
+ var windowScrollTop = $(window).scrollTop();
+ var endPoint = docHeight - footerHeight;
+
+ if(windowScrollTop > 50){
+  $('.works_header').addClass('scroll');
+ }else{
+  $('.works_header').removeClass('scroll');
+ }
+}
+</script>
 </body>
 
 </html>
