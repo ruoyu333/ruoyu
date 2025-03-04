@@ -208,7 +208,7 @@ a.maskuplink{
 }
 
 .runingtext.doenJ >div{
-    animation: picture_scroll 10s linear infinite;
+    animation: picture_scroll 15s linear infinite;
 }
 @media screen and (max-width: 980px){
  .work_item{
