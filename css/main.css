@@ -991,3 +991,6 @@ footer .bg_footer p {
  .experience .a-experience .a-e-content{margin: 50px 0;}
  .out-box{margin: 0;}
 }
+@media screen and (min-width: 641px){
+.hamburger{display: none;}
+}
