@@ -979,6 +979,9 @@ footer .bg_footer p {
     width: 100%;
   }
 }/*# sourceMappingURL=main.css.map */
+@media screen and (min-width: 641px){
+.hamburger{display: none;}
+}
 
 @media screen and (max-width: 480px){
  .mydvdv a{margin-right: 10px;padding: 4px 20px 5px 20px;padding: 4px 17px 5px 17px;}
@@ -990,7 +993,4 @@ footer .bg_footer p {
  .out-box .profile-box .profile p{text-align: left;}
  .experience .a-experience .a-e-content{margin: 50px 0;}
  .out-box{margin: 0;}
-}
-@media screen and (min-width: 641px){
-.hamburger{display: none;}
 }
