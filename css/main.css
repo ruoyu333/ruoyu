@@ -983,6 +983,12 @@ footer .bg_footer p {
 .hamburger{display: none;}
 }
 
+@media screen and (max-width: 640px){
+    .mydvdv_aboutme{
+    display: none;
+}
+}
+
 @media screen and (max-width: 480px){
  .mydvdv a{margin-right: 10px;padding: 4px 20px 5px 20px;padding: 4px 17px 5px 17px;}
  header nav .social_media{margin-left: 5px;}
