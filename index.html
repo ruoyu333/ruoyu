@@ -411,6 +411,20 @@ meaningful user experiences.</p>
     <script>
         new WOW().init();
         </script>
+<script src="/jquery/jquery-inview.js"></script>
+<script>
+
+ $(function () {
+  $('.aos-init').each(function () {
+   
+   $(this).on('inview', function (event, isInView) {
+    if (isInView) {
+     $(this).addClass('aos-animate');
+    }
+   });
+  });
+ });
+</script>
 <script>
 webscroll();
 $(window).scroll(webscroll);
