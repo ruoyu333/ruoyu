@@ -128,7 +128,7 @@ a.maskuplink{
 .work_item.even_item .we_left{
  border-radius: 0 20px 20px 0;
 }
-.work_item .we_right:hover {
+.work_item :hover {
     background-color: #E0E0E0;
 }
 
