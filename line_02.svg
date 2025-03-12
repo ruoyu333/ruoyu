@@ -25,6 +25,7 @@
 <rect x="1" y="1" width="202" height="202" stroke="#B4B4B4" stroke-width="2"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M102 204C158.333 204 204 158.333 204 102C204 45.667 158.333 0 102 0V2C157.228 2 202 46.7715 202 102C202 157.228 157.228 202 102 202V204Z" fill="#B4B4B4"/>
 <path d="M1 102H205" stroke="#B4B4B4" stroke-width="2"/>
+<path d="M405 205V410" stroke="#B4B4B4" stroke-width="2"/>
 </g>
 <defs>
 <clipPath id="clip0_581_977">
