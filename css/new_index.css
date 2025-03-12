@@ -128,12 +128,15 @@ a.maskuplink{
 .work_item.even_item .we_left{
  border-radius: 0 20px 20px 0;
 }
-.work_item:hover {
-    background-color: #162A4B;
-}
-.work_item:hover .we_right h3{color: white;}
-.work_item:hover .we_info p{color: white;}
 
+.work_item[data-aos^=fade][data-aos^=fade].aos-animate:hover{
+    -moz-transform: translateY(-0.35em);
+    -webkit-transform: translateY(-0.35em);
+    -o-transform: translateY(-0.35em);
+    -ms-transform: translateY(-0.35em);
+    transform: translateY(-0.35em);
+    transition-timing-function: ease;
+}
 
 .work_item .we_right{
     display: flex;
