@@ -130,11 +130,11 @@ a.maskuplink{
 }
 
 .work_item[data-aos^=fade][data-aos^=fade].aos-animate:hover{
-    -moz-transform: translateY(-0.35em);
-    -webkit-transform: translateY(-0.35em);
-    -o-transform: translateY(-0.35em);
-    -ms-transform: translateY(-0.35em);
-    transform: translateY(-0.35em);
+    -moz-transform: translateY(-0.5em);
+    -webkit-transform: translateY(-0.5em);
+    -o-transform: translateY(-0.5em);
+    -ms-transform: translateY(-0.5em);
+    transform: translateY(-0.5em);
     transition-timing-function: ease;
 }
 
