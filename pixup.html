@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ruoyu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <style>
+        .works_header {
+            background-color: #171b22;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        nav{
+        display: flex;
+        align-items: center;
+        position: sticky;
+        top: 0px;
+        padding: 20px;
+        background-color: white;
+        z-index: 5;
+        box-shadow: rgb(219, 219, 219) 0px 0px 10px;
+
+
+        .ruoyu{
+            width: 121px;
+            height: 22px;
+        }
+        
+        .social_media{
+            margin-left: 40px;
+        }
+    
+        .hamburger{
+            width: 32px;
+            height: 32px;
+            margin-left:auto;
+        }
+    }
+
+
+    nav>a{
+            &:hover{
+                opacity: 50%;
+            }
+        }
+        
+        .pettime {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 5%;
+            margin-bottom: 5%;
+        }
+
+        .pettime img {
+            width: 85%;
+            /* box-shadow:1px 1px 1px rgb(174, 174, 174); */
+/*             box-shadow: rgb(40, 40, 40) 0px 0px 10px; */
+        }
+
+.pettime iframe {
+            width: 85%;
+            aspect-ratio: 9 / 4;
+            /* box-shadow:1px 1px 1px rgb(174, 174, 174); */
+/*             box-shadow: rgb(241, 241, 241) 0px 0px 10px; */
+        }
+
+        .social_media>a:hover{
+            opacity: 30%;
+        }
+
+        
+
+    </style>
+</head>
+
+<body>
+    <div class="works_header">
+        <nav>
+            <a href="index.html"> <img class="ruoyu" src="img/ruoyu.svg" alt=""></a>
+            <div class="social_media">
+<!--                 <a href=""> <img src="img/FB.svg" alt=""></a> -->
+                <a href=""> <img src="img/indeed.svg" alt=""></a>
+<!--                 <a href=""> <img src="img/ig.svg" alt=""></a> -->
+                <a href="https://www.behance.net/crystal17360a4"> <img src="img/behance.svg" alt=""></a>
+            </div>
+            <div class="hamburger"  data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <img class="hamburger" src="img/hamburger.svg" alt="">
+            </div>
+        </nav>
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html#about_me">About Me</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html#work_exp">My Exp.</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#my_works_id">My Works</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html#id_form">Contact Me</a>
+                  </li>
+
+              </ul>
+            </div>
+          </div>
+
+    <main>
+        <section class="pettime">
+           <img src="img/Mighty 8K-01.svg" alt="">
+
+<iframe src="https://www.youtube.com/embed/XEzOO_li4G0?start=12" 
+title="YouTube video player" frameborder="0" 
+allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen="">
+</iframe>
+   
+           <img src="img/Mighty 8K-02.svg" alt="">
+           <img src="img/Mighty 8K-03.svg" alt="">
+           <img src="img/Mighty 8K-04.svg" alt="">
+           <img src="img/Mighty 8K-05.svg" alt="">
+           <img src="img/Mighty 8K-06.svg" alt="">
+           <img src="img/Mighty 8K-07.png" alt="">
+           <img src="img/Mighty 8K-08.jpg" alt="">
+           <img src="img/Mighty 8K-09.svg" alt="">
+           <img src="img/Mighty 8K-10.svg" alt="">
+        </section>
+    </main>
+</div>
+
+
+
+
+    <footer>
+        <div class="bg_footer">
+            <p>© Ruo Yu Wu 2023</p>
+        </div>
+    </footer>
+
+    <script>
+        function reCaclHeight() {
+            var h = document.getElementById("jobExp").clientHeight;
+            document.getElementById("line1").style.height =
+                parseInt(h / 2 - 32) + "px";
+            document.getElementById("line2").style.height =
+                parseInt(h / 2 - 32) + "px";
+        }
+
+        reCaclHeight();
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>
