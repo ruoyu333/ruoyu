@@ -19,40 +19,40 @@
             width: 100%;
         }
 
-        nav{
-        display: flex;
-        align-items: center;
-        position: sticky;
-        top: 0px;
-        padding: 20px;
-        background-color: white;
-        z-index: 5;
-        box-shadow: rgb(219, 219, 219) 0px 0px 10px;
+        nav {
+            display: flex;
+            align-items: center;
+            position: sticky;
+            top: 0px;
+            padding: 20px;
+            background-color: white;
+            z-index: 5;
+            box-shadow: rgb(219, 219, 219) 0px 0px 10px;
+        }
 
-
-        .ruoyu{
+        nav .ruoyu {
             width: 121px;
             height: 22px;
         }
-        
-        .social_media{
+
+        nav .social_media {
             margin-left: 40px;
         }
-    
-        .hamburger{
+
+        nav .hamburger {
             width: 32px;
             height: 32px;
-            margin-left:auto;
+            margin-left: auto;
         }
-    }
 
-
-    nav>a{
-            &:hover{
-                opacity: 50%;
-            }
+        nav>a:hover {
+            opacity: 50%;
         }
         
+        nav .social_media>a:hover {
+            opacity: 30%;
+        }
+
         .pettime {
             display: flex;
             align-items: center;
@@ -63,22 +63,47 @@
 
         .pettime img {
             width: 85%;
-            /* box-shadow:1px 1px 1px rgb(174, 174, 174); */
-/*             box-shadow: rgb(40, 40, 40) 0px 0px 10px; */
         }
 
-.pettime iframe {
+        .pettime iframe {
             width: 85%;
             aspect-ratio: 9 / 4;
-            /* box-shadow:1px 1px 1px rgb(174, 174, 174); */
-/*             box-shadow: rgb(241, 241, 241) 0px 0px 10px; */
         }
 
-        .social_media>a:hover{
-            opacity: 30%;
+        /* ↓↓↓↓↓ 新增的按鈕樣式 (含 Hover 與 對齊設定) ↓↓↓↓↓ */
+        .pixup-link-container {
+            width: 85%;
+            height: 48px;
+            background-color: #040404;
+            color: #ffffff;
+            font-size: 12px;
+            text-decoration: none; /* 去除 Link: 的底線 */
+            
+            display: flex;
+            align-items: center;
+            justify-content: flex-start; /* 靠左對齊 */
+            
+            /* 關鍵設定：使用 % 來對齊圖片中的文字。
+               如果發現沒有對齊 "Role: Senior..."，請微調這個數字 (例如 13% 或 15%) 
+            */
+            padding-left: 14%; 
+            
+            box-sizing: border-box; /* 確保 padding 不會撐大寬度 */
+            margin: 0; /* 上下不留白，緊貼圖片 */
+            transition: all 0.3s ease; /* Hover 的過渡動畫 */
         }
 
-        
+        /* 滑鼠移過去的效果 */
+        .pixup-link-container:hover {
+            background-color: #1a1a1a; /* 背景變亮一點點 */
+            color: #aaaaaa; /* 文字變灰 */
+        }
+
+        /* 網址部分的底線顏色跟著變 */
+        .pixup-link-container:hover span {
+            text-decoration-color: #aaaaaa;
+        }
+        /* ↑↑↑↑↑ 新增結束 ↑↑↑↑↑ */
 
     </style>
 </head>
@@ -88,65 +113,61 @@
         <nav>
             <a href="index.html"> <img class="ruoyu" src="img/ruoyu.svg" alt=""></a>
             <div class="social_media">
-<!--                 <a href=""> <img src="img/FB.svg" alt=""></a> -->
                 <a href=""> <img src="img/indeed.svg" alt=""></a>
-<!--                 <a href=""> <img src="img/ig.svg" alt=""></a> -->
                 <a href="https://www.behance.net/crystal17360a4"> <img src="img/behance.svg" alt=""></a>
             </div>
-            <div class="hamburger"  data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-            <img class="hamburger" src="img/hamburger.svg" alt="">
+            <div class="hamburger" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <img class="hamburger" src="img/hamburger.svg" alt="">
             </div>
         </nav>
 
         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
             <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="index.html#about_me">About Me</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="index.html#work_exp">My Exp.</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html#my_works_id">My Works</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="index.html#id_form">Contact Me</a>
-                  </li>
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html#about_me">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#work_exp">My Exp.</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#my_works_id">My Works</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#id_form">Contact Me</a>
+                    </li>
 
-              </ul>
+                </ul>
             </div>
-          </div>
+        </div>
 
-    <main>
-        <section class="pettime">
-           <img src="img/pixup_01.png" alt="">
-<a href="https://pixup3d.com/en/" target="_blank" style="width: 85%; height: 48px; background-color: #040404; color: #ffffff; font-size: 12px; text-decoration: none; display: flex; align-items: center; justify-content: flex-start; padding-left: 140px; box-sizing: border-box; margin: 0;">
-    Link:&nbsp;<span style="text-decoration: underline;">https://pixup3d.com/en</span>
-</a>
-            
-           <img src="img/pixup_02.png" alt="">
-            
-            <iframe src="https://www.youtube.com/embed/3rQOfpPnz0U" 
-title="YouTube video player" frameborder="0" 
-allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-allowfullscreen="">
-</iframe>
-           <img src="img/pixup_03.png" alt="">
-           <img src="img/pixup_04.png" alt="">
-           <img src="img/pixup_05.png" alt="">
-           <img src="img/pixup_06.png" alt="">
-           <img src="img/pixup_07.png" alt="">
-        </section>
-    </main>
-</div>
+        <main>
+            <section class="pettime">
+                <img src="img/pixup_01.png" alt="">
 
+                <a href="https://pixup3d.com/en/" target="_blank" class="pixup-link-container">
+                    Link:&nbsp;<span style="text-decoration: underline;">https://pixup3d.com/en</span>
+                </a>
+                <img src="img/pixup_02.png" alt="">
 
-
+                <iframe src="https://www.youtube.com/embed/3rQOfpPnz0U" 
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen="">
+                </iframe>
+                
+                <img src="img/pixup_03.png" alt="">
+                <img src="img/pixup_04.png" alt="">
+                <img src="img/pixup_05.png" alt="">
+                <img src="img/pixup_06.png" alt="">
+                <img src="img/pixup_07.png" alt="">
+            </section>
+        </main>
+    </div>
 
     <footer>
         <div class="bg_footer">
@@ -156,11 +177,14 @@ allowfullscreen="">
 
     <script>
         function reCaclHeight() {
-            var h = document.getElementById("jobExp").clientHeight;
-            document.getElementById("line1").style.height =
-                parseInt(h / 2 - 32) + "px";
-            document.getElementById("line2").style.height =
-                parseInt(h / 2 - 32) + "px";
+            // 注意：原本的 HTML 中似乎沒有 id="jobExp" 或是 id="line1/line2"
+            // 如果這些元素在別的地方沒被用到，這段 JS 實際上可能不會運作，但不影響頁面顯示
+            var jobExp = document.getElementById("jobExp");
+            if (jobExp) {
+                var h = jobExp.clientHeight;
+                document.getElementById("line1").style.height = parseInt(h / 2 - 32) + "px";
+                document.getElementById("line2").style.height = parseInt(h / 2 - 32) + "px";
+            }
         }
 
         reCaclHeight();
