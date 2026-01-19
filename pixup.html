@@ -70,32 +70,26 @@
             aspect-ratio: 9 / 4;
         }
 
-        /* ↓↓↓↓↓ 修改後的樣式 ↓↓↓↓↓ */
+        /* ↓↓↓↓↓ 樣式設定 ↓↓↓↓↓ */
         .pixup-link-container {
             width: 85%;
             height: 48px;
-            
-            /* 底色 #040404 */
             background-color: #010101; 
-            
             color: #ffffff;
             font-size: 12px;
             text-decoration: none;
             display: flex;
             align-items: center;
             justify-content: flex-start;
-            
-            /* 左邊距離 8% */
             padding-left: 8%; 
-            
             box-sizing: border-box;
             margin: 0;
         }
 
-        /* Hover 效果：滑鼠移上去時，只改變連結文字顏色，底色不變 */
+        /* ↓↓↓ 改這裡：Hover 顏色改成 #DC4B2D ↓↓↓ */
         .pixup-link-container:hover span {
-            color: #aaaaaa; /* 網址文字變灰 */
-            text-decoration-color: #aaaaaa; /* 底線也變灰 */
+            color: #DC4B2D; /* 文字變紅橘色 */
+            text-decoration-color: #DC4B2D; /* 底線也變紅橘色 */
             transition: all 0.3s ease;
         }
         /* ↑↑↑↑↑ 修改結束 ↑↑↑↑↑ */
