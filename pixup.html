@@ -70,40 +70,35 @@
             aspect-ratio: 9 / 4;
         }
 
-        /* ↓↓↓↓↓ 新增的按鈕樣式 (含 Hover 與 對齊設定) ↓↓↓↓↓ */
+        /* ↓↓↓↓↓ 修改後的樣式 (Padding 與 Hover) ↓↓↓↓↓ */
         .pixup-link-container {
             width: 85%;
             height: 48px;
-            background-color: #040404;
+            background-color: #010101; 
             color: #ffffff;
             font-size: 12px;
-            text-decoration: none; /* 去除 Link: 的底線 */
-            
+            text-decoration: none;
             display: flex;
             align-items: center;
-            justify-content: flex-start; /* 靠左對齊 */
+            justify-content: flex-start;
             
-            /* 關鍵設定：使用 % 來對齊圖片中的文字。
-               如果發現沒有對齊 "Role: Senior..."，請微調這個數字 (例如 13% 或 15%) 
-            */
-            padding-left: 14%; 
+            /* 1. 修改這裡的 padding-left */
+            padding-left: 9.26%; 
             
-            box-sizing: border-box; /* 確保 padding 不會撐大寬度 */
-            margin: 0; /* 上下不留白，緊貼圖片 */
-            transition: all 0.3s ease; /* Hover 的過渡動畫 */
+            box-sizing: border-box;
+            margin: 0;
         }
 
-        /* 滑鼠移過去的效果 */
-        .pixup-link-container:hover {
-            background-color: #1a1a1a; /* 背景變亮一點點 */
-            color: #aaaaaa; /* 文字變灰 */
-        }
-
-        /* 網址部分的底線顏色跟著變 */
+        /* 2. 修改 Hover 效果：
+           移除原本容器的背景變色。
+           改為當滑鼠移到容器上時，只針對裡面的 span (網址部分) 進行變色和過渡動畫。
+        */
         .pixup-link-container:hover span {
-            text-decoration-color: #aaaaaa;
+            color: #aaaaaa; /* 網址文字變灰 */
+            text-decoration-color: #aaaaaa; /* 底線也變灰 */
+            transition: all 0.3s ease; /* 加入平滑過渡效果 */
         }
-        /* ↑↑↑↑↑ 新增結束 ↑↑↑↑↑ */
+        /* ↑↑↑↑↑ 修改結束 ↑↑↑↑↑ */
 
     </style>
 </head>
@@ -152,51 +147,5 @@
                 <a href="https://pixup3d.com/en/" target="_blank" class="pixup-link-container">
                     Link:&nbsp;<span style="text-decoration: underline;">https://pixup3d.com/en</span>
                 </a>
-                <img src="img/pixup_02.png" alt="">
-
-                <iframe src="https://www.youtube.com/embed/3rQOfpPnz0U" 
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen="">
-                </iframe>
                 
-                <img src="img/pixup_03.png" alt="">
-                <img src="img/pixup_04.png" alt="">
-                <img src="img/pixup_05.png" alt="">
-                <img src="img/pixup_06.png" alt="">
-                <img src="img/pixup_07.png" alt="">
-            </section>
-        </main>
-    </div>
-
-    <footer>
-        <div class="bg_footer">
-            <p>© Ruo Yu Wu 2023</p>
-        </div>
-    </footer>
-
-    <script>
-        function reCaclHeight() {
-            // 注意：原本的 HTML 中似乎沒有 id="jobExp" 或是 id="line1/line2"
-            // 如果這些元素在別的地方沒被用到，這段 JS 實際上可能不會運作，但不影響頁面顯示
-            var jobExp = document.getElementById("jobExp");
-            if (jobExp) {
-                var h = jobExp.clientHeight;
-                document.getElementById("line1").style.height = parseInt(h / 2 - 32) + "px";
-                document.getElementById("line2").style.height = parseInt(h / 2 - 32) + "px";
-            }
-        }
-
-        reCaclHeight();
-    </script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-
-    <script>
-        new WOW().init();
-    </script>
-</body>
-
-</html>
+                <img src="img/pix
