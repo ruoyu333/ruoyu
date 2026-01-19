@@ -148,4 +148,48 @@
                     Link:&nbsp;<span style="text-decoration: underline;">https://pixup3d.com/en</span>
                 </a>
                 
-                <img src="img/pix
+                <img src="img/pixup_02.png" alt="">
+
+                <iframe src="https://www.youtube.com/embed/3rQOfpPnz0U" 
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen="">
+                </iframe>
+                
+                <img src="img/pixup_03.png" alt="">
+                <img src="img/pixup_04.png" alt="">
+                <img src="img/pixup_05.png" alt="">
+                <img src="img/pixup_06.png" alt="">
+                <img src="img/pixup_07.png" alt="">
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <div class="bg_footer">
+            <p>© Ruo Yu Wu 2023</p>
+        </div>
+    </footer>
+
+    <script>
+        function reCaclHeight() {
+            var jobExp = document.getElementById("jobExp");
+            if (jobExp) {
+                var h = jobExp.clientHeight;
+                document.getElementById("line1").style.height = parseInt(h / 2 - 32) + "px";
+                document.getElementById("line2").style.height = parseInt(h / 2 - 32) + "px";
+            }
+        }
+        reCaclHeight();
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>
