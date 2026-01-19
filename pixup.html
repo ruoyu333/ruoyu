@@ -70,11 +70,14 @@
             aspect-ratio: 9 / 4;
         }
 
-        /* ↓↓↓↓↓ 修改後的樣式 (Padding 與 Hover) ↓↓↓↓↓ */
+        /* ↓↓↓↓↓ 修改後的樣式 ↓↓↓↓↓ */
         .pixup-link-container {
             width: 85%;
             height: 48px;
-            background-color: #010101; 
+            
+            /* 1. 底色改為 #040404 */
+            background-color: #040404; 
+            
             color: #ffffff;
             font-size: 12px;
             text-decoration: none;
@@ -82,21 +85,18 @@
             align-items: center;
             justify-content: flex-start;
             
-            /* 1. 修改這裡的 padding-left */
-            padding-left: 9.26%; 
+            /* 2. 左邊距離改為 8% */
+            padding-left: 8%; 
             
             box-sizing: border-box;
             margin: 0;
         }
 
-        /* 2. 修改 Hover 效果：
-           移除原本容器的背景變色。
-           改為當滑鼠移到容器上時，只針對裡面的 span (網址部分) 進行變色和過渡動畫。
-        */
+        /* Hover 效果：滑鼠移上去時，只改變連結文字顏色，底色不變 */
         .pixup-link-container:hover span {
             color: #aaaaaa; /* 網址文字變灰 */
             text-decoration-color: #aaaaaa; /* 底線也變灰 */
-            transition: all 0.3s ease; /* 加入平滑過渡效果 */
+            transition: all 0.3s ease;
         }
         /* ↑↑↑↑↑ 修改結束 ↑↑↑↑↑ */
 
